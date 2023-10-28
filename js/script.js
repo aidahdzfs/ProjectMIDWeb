@@ -69,3 +69,31 @@ document.querySelector('#close2').onclick = (e) => {
     itemDetailModal2.style.display = 'none';
     e.preventDefault();
 };
+
+//modal box
+const itemDetailModal3 = document.querySelector('#item-detail-modal3');
+const itemDetailButton3 = document.querySelector('.item-detail-btn3');
+
+itemDetailButton3.onclick = (e) => {
+    itemDetailModal3.style.display = 'flex';
+    e.preventDefault();
+};
+//tombol close click
+document.querySelector('#close3').onclick = (e) => {
+    itemDetailModal3.style.display = 'none';
+    e.preventDefault();
+};
+
+//modal box
+const itemDetailModal4 = document.querySelector('#item-detail-modal4');
+const itemDetailButton4 = document.querySelector('.item-detail-btn4');
+
+itemDetailButton4.onclick = (e) => {
+    itemDetailModal4.style.display = 'flex';
+    e.preventDefault();
+};
+//tombol close click
+document.querySelector('#close4').onclick = (e) => {
+    itemDetailModal4.style.display = 'none';
+    e.preventDefault();
+};

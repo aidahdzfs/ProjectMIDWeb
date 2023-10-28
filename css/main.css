@@ -314,12 +314,12 @@ body{
     font-size: 2rem;
 }
 
-.products .product-price {
+.products .product-price, .modal .product-price {
     font-size: 1.3rem;
     font-weight: 700;
 }
 
-.products .product-price span {
+.products .product-price span, .modal .product-price span {
     text-decoration: line-through;
     font-weight: lighter;
     font-size: 1rem;
