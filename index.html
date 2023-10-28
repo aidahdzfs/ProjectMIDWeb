@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arutala Barbershop</title>
+    <title>cukurDeh!</title>
 
     <!-- icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -25,14 +25,33 @@
         <div class="navbar-nav">
             <a href="#home">Home</a>
             <a href="#about">Tentang Kami</a>
+            <a href="#products">Produk</a>
             <a href="#contact">Kontak</a>
         </div>
 
         <div class="navbar-extra">
-            <a href="#" id="search"><i data-feather="search"></i></a>
-            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="search-btn"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-btn"><i data-feather="shopping-cart"></i></a>
             <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
             
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here..">
+            <label for="search-box" ></label><i data-feather="search"></i></label>
+        </div>
+
+        <div class="shopping-cart">
+            <div class="cart-item">
+                <img src="./image/header2.jpg" alt="error">
+                <div class="item-detail">
+                    <h3>Product 1</h3>
+                    <div class="item-price">IDR 30K</div>
+                </div>
+                <div>
+                    <i data-feather="trash-2" class="delete-item"></i>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- navbar end -->
@@ -57,17 +76,80 @@
             </div>
             <div class="content">
                 <h3>Kenapa harus cukur disini?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque inventore asperiores quo porro non sapiente?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ex. Ipsam quaerat cumque quidem quos beatae dolores, accusamus ea harum?</p>
+                <p>Kami menawarkan pengalaman cukur yang profesional, nyaman, dan berkualitas tinggi. Kami memiliki tim ahli yang terlatih dengan baik dalam seni mencukur dan menggunakan peralatan yang canggih. </p>
+                <br>
+                <p>Kami juga memberikan perawatan kulit yang tepat sebelum dan setelah cukur untuk memastikan kulit Anda tetap sehat dan bebas iritasi. Selain itu, lingkungan kami dirancang untuk memberikan suasana santai dan penuh perhatian kepada pelanggan. Dengan memilih kami, Anda akan mendapatkan hasil cukur yang rapi serta pengalaman yang menyenangkan dan menenangkan.</p>
             </div>
         </div>
     </section>
     <!-- about end -->
 
+    <!-- product start -->
+    <section class="products" id="products">
+        <h2>Layanan Unggulan <span>Kami</span></h2>
+        <p>Apa saja sih, yang ada di cukurDeh! ?</p>
+
+        <div class="row">
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-btn1"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-img">
+                    <img src="./image/1.jpg" alt="error">
+                </div>
+                <div class="product-detail">
+                    <h3>Hair Cut 3 in 1</h3>
+                    <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-btn2"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-img">
+                    <img src="./image/2.jpg" alt="error">
+                </div>
+                <div class="product-detail">
+                    <h3>Cat Rambut</h3>
+                    <div class="product-price">IDR 70K-100k <span>IDR 100K-150k</span></div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-btn2"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-img">
+                    <img src="./image/3.jpg" alt="error">
+                </div>
+                <div class="product-detail">
+                    <h3>Perawatan Rambut</h3>
+                    <div class="product-price">IDR 70K-200k <span>IDR 100K-350k</span></div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-icons">
+                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <a href="#" class="item-detail-btn2"><i data-feather="eye"></i></a>
+                </div>
+                <div class="product-img">
+                    <img src="./image/4.jpg" alt="error">
+                </div>
+                <div class="product-detail">
+                    <h3>Shaving</h3>
+                    <div class="product-price">IDR 15k <span>IDR 20k</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product end -->
+
     <!-- contact start -->
     <section id="contact" class="contact">
         <h2><span>Kontak</span> Kami</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, at?</p>
+        <p>Dimana kalian bisa menemui kami?</p>
 
         <div class="row">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.886877102824!2d119.52221559999997!3d-5.121925399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefb5ccc8cad8d%3A0x22906fcd4dd3c427!2sJl.%20Paccerakkang%20No.172%2C%20Paccerakkang%2C%20Kec.%20Biringkanaya%2C%20Kota%20Makassar%2C%20Sulawesi%20Selatan%2090241!5e0!3m2!1sid!2sid!4v1698116749715!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
@@ -107,6 +189,40 @@
         </div>
     </footer>
     <!-- footer end -->
+
+    <!-- modal box item details start -->
+    <div>
+        <div class="modal" id="item-detail-modal1">
+            <div class="modal-container">
+                <a href="#" class="close" id="close1"><i data-feather="x"></i></a>
+                <div class="modal-detail">
+                    <img src="/image/header2.jpg" alt="error">
+                    <div class="product-detail">
+                        <h3>Product 1</h3>
+                        <p>ckckck jwnskw wiodjjd</p>
+                        <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+                        <a href="#"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="item-detail-modal2">
+            <div class="modal-container">
+                <a href="#" class="close" id="close2"><i data-feather="x"></i></a>
+                <div class="modal-detail">
+                    <img src="/image/header2.jpg" alt="error">
+                    <div class="product-detail">
+                        <h3>Product 1</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+                        <a href="#"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- modal box item details end -->
 
     <!-- feather icons -->
     <script>
