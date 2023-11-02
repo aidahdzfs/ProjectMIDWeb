@@ -97,3 +97,27 @@ document.querySelector('#close4').onclick = (e) => {
     itemDetailModal4.style.display = 'none';
     e.preventDefault();
 };
+
+//tmbah produk
+let keranjang = [];
+let totalHarga = 0;
+
+function tambahProduk(nama, harga) {
+    keranjang.push({ nama, harga });
+    totalHarga += harga;
+    updateKeranjang();
+}
+
+function updateKeranjang() {
+    const keranjangItems = document.getElementById("cart-item");
+    const totalHargaElement = document.getElementById("total-harga");
+
+    keranjangItems.innerHTML = "";
+    keranjang.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = `${item.nama} - Rp${item.harga}`;
+        keranjangItems.appendChild(li);
+    });
+
+    totalHargaElement.textContent = totalHarga;
+}

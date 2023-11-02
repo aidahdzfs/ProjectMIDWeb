@@ -42,21 +42,13 @@
         </div>
 
         <div class="shopping-cart">
-            <div class="cart-item">
-                <img src="./image/header2.jpg" alt="error">
-                <div class="item-detail">
-                    <h3>Product 1</h3>
-                    <div class="item-price">IDR 30K</div>
-                </div>
-                <div>
-                    <i data-feather="trash-2" class="delete-item"></i>
-                </div>
-            </div>
+            <ol id="cart-item"></ol>
+            <p>Total: Rp<span id="total-harga">0</span></p>
         </div>
     </nav>
     <!-- navbar end -->
     
-    <!-- utama start -->
+    <!-- hero start -->
     <section class="hero" id="home">
         <main class="content">
             <h1>siniki ke cukur<span>Deh!</span></h1>
@@ -64,7 +56,7 @@
             <a href="#" class="cta">Pesan Sekarang</a>
         </main>
     </section>
-    <!-- utama end -->
+    <!-- hero end -->
 
     <!-- about start -->
     <section id="about" class="about">
@@ -92,7 +84,9 @@
         <div class="row">
             <div class="product-card">
                 <div class="product-icons">
-                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <button onclick="tambahProduk('Potong Rambut 3 in 1', 30000)">
+                        <i data-feather="shopping-cart"></i>
+                    </button>
                     <a href="#" class="item-detail-btn1"><i data-feather="eye"></i></a>
                 </div>
                 <div class="product-img">
@@ -105,7 +99,9 @@
             </div>
             <div class="product-card">
                 <div class="product-icons">
-                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <button onclick="tambahProduk('Cat Rambut', 70000)">
+                        <i data-feather="shopping-cart"></i>
+                    </button>
                     <a href="#" class="item-detail-btn2"><i data-feather="eye"></i></a>
                 </div>
                 <div class="product-img">
@@ -113,12 +109,14 @@
                 </div>
                 <div class="product-detail">
                     <h3>Cat Rambut</h3>
-                    <div class="product-price">IDR 70K-100k <span>IDR 100K-150k</span></div>
+                    <div class="product-price">IDR 70k <span>IDR 100K</span></div>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-icons">
-                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <button onclick="tambahProduk('Perawatan Rambut', 150000)">
+                        <i data-feather="shopping-cart"></i>
+                    </button>
                     <a href="#" class="item-detail-btn3"><i data-feather="eye"></i></a>
                 </div>
                 <div class="product-img">
@@ -126,12 +124,14 @@
                 </div>
                 <div class="product-detail">
                     <h3>Perawatan Rambut</h3>
-                    <div class="product-price">IDR 70K-200k <span>IDR 100K-350k</span></div>
+                    <div class="product-price">IDR 150k <span>IDR 250k</span></div>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-icons">
-                    <a href="#"><i data-feather="shopping-cart"></i></a>
+                    <button onclick="tambahProduk('Shaving', 15000)">
+                        <i data-feather="shopping-cart"></i>
+                    </button>
                     <a href="#" class="item-detail-btn4"><i data-feather="eye"></i></a>
                 </div>
                 <div class="product-img">

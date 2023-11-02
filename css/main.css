@@ -134,36 +134,21 @@ body{
     right: 0;
 }
 
-.navbar .shopping-cart .cart-item {
-    margin: 2rem 0;
+.navbar .shopping-cart ol {
+    margin: 2rem;
     display: flex;
+    font-size: 24px;
     align-items: center;
-    gap: 1.5rem;
     padding-bottom: 1rem;
     border-bottom: 1px dashed #666;
     position: relative;
+    flex-wrap: wrap;
+}
+.navbar .shopping-cart li {
+    padding-bottom: 2rem;
 }
 
-.navbar .shopping-cart img {
-    height: 6rem;
-    border-radius: 50%;
-}
-
-.navbar .shopping-cart h3 {
-    font-size: 1.6rem;
-    padding-bottom: 0.5rem;
-}
-
-.navbar .shopping-cart .item-price {
-    font-size: 1.2rem;
-}
-
-.navbar .shopping-cart .delete-item {
-    right: 1rem;
-    cursor: pointer;
-}
-
-/* utama */
+/* hero */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -283,6 +268,24 @@ body{
     display: flex;
     justify-content: center;
     gap: 0.5rem;
+}
+
+.products .product-icons button {
+    width: 4rem;
+    height: 4rem;
+    background-color: #010101;
+    color: #fff;
+    margin: 0.3rem;
+    border: 1px solid #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.products .product-icons button:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
 }
 
 .products .product-icons a {
