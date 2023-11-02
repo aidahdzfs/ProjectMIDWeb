@@ -122,12 +122,13 @@ body{
     position: absolute;
     top: 100%;
     right: -100%;
-    width: 35rem;
+    width: 24rem;
     height: 100vh;
     padding: 0 1.5rem;
     color: var(--bg);
     background-color: #fff;
     transition: 0.3s;
+    border: 3px solid #666;
 }
 
 .shopping-cart.active {
@@ -137,7 +138,7 @@ body{
 .navbar .shopping-cart ol {
     margin: 2rem;
     display: flex;
-    font-size: 24px;
+    font-size: 16px;
     align-items: center;
     padding-bottom: 1rem;
     border-bottom: 1px dashed #666;
