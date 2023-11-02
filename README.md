@@ -15,6 +15,6 @@ CukurDeh! merupakan sebuah platform berbasis web yang bisa digunakan untuk sebua
 
 ## Pengembangan
 Website CukurDeh! dibangun menggunakan IDE Visual Studio Code, HTML, CSS dan bahasa pemrograman Java Script.
-- HTML = digunakan untuk membuat struktur-struktur yang mengorganisasikan halaman web ini
-- CSS = Digunakan untuk mengatur tampilan dan tata letak dari halaman web ini
-- Java Script = Digunakan agar web ini bisa interaktif dan juga responsif. Contohnya pada fitur hamburger menu, tambah keranjang, dsb.
+- HTML         = digunakan untuk membuat struktur-struktur yang mengorganisasikan halaman web ini
+- CSS          = Digunakan untuk mengatur tampilan dan tata letak dari halaman web ini
+- Java Script  = Digunakan agar web ini bisa interaktif dan juga responsif. Contohnya pada fitur hamburger menu, tambah keranjang, dsb.
